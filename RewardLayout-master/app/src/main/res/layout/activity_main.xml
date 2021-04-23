@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/dy_bg"
+        android:scaleType="centerCrop"
+        />
+
+    <com.zhangyf.gift.RewardLayout
+        android:id="@+id/llgiftcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:animateLayoutChanges="true"
+        app:max_gift="3"
+        app:gift_item_layout="@layout/gift_animation_item"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/gift_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_above="@+id/gift_ll2"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvSendone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="糖果喵"
+            android:drawableLeft="@mipmap/tg"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvSendtwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@mipmap/good"
+            android:gravity="center"
+            android:text="666甲"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvSendthree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/banana"
+            android:text="香蕉梦"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvSendfor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/yw"
+            android:text="鱼丸枫"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvSendanother"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="糖果枫"
+            android:drawableLeft="@mipmap/tg"
+            android:textColor="#333"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gift_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tvSendfive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="玫瑰"
+            android:drawableLeft="@mipmap/mg"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvSendsix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@mipmap/hj"
+            android:gravity="center"
+            android:text="火箭"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvSendseven"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/car"
+            android:text="兰博"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvSendeight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/yt"
+            android:text="游艇"
+            android:textColor="#333"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_auto_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="66dp"
+        android:text="自动模拟送礼"/>
+
+    <Button
+        android:id="@+id/btn_auto_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_above="@id/btn_auto_send"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="取消自动送礼"/>
+
+    <Button
+        android:id="@+id/btn_update_tg_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_above="@id/btn_auto_cancel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="刷新糖果喵"/>
+
+    <TextView
+        android:id="@+id/tvSendzero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="糖果喵x2  "
+        android:drawableLeft="@mipmap/tg"
+        android:textColor="#333"
+        android:textSize="10sp" />
+</RelativeLayout>
